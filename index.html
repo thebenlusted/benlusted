@@ -4,34 +4,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:900&display=swap" rel="stylesheet">
-    <title>Ben Lusted | Web Developer</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,900&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <!--JQUERY-->
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+
+    <title>Ben Lusted | Portfolio</title>
   </head>
   <body>
-    <div class="inner">
-    <div class="landing-info">
-        <div class="slide1"></div>
-        <div class="slide2"></div>
-        <div class="slide3"></div>
-      <div class="landing-info-text">
-      <h1>Ben</h1>
-      <h1>Lusted.</h1>
-      <br>
-      <h2>&nbspweb developer.</h2>
-      </div>
-        <div class="nav-options">
-          <ul>
-            <li><a href="#who-am-i">// who am i?</a></li>
-            <li><a href="#my-work">// my work</a></li>
-            <li><a href="#contact-me">// contact</a></li>
-            </ul>
-          </div>
+    <script src="js/javascript.js"></script>
+    <div class="container">
+    <div id="slide1">
+      <a href="#my-work-btn" id="my-work-btn" class="nav-link">my work</a>
     </div>
-    <div class="about" id="who-am-i">
-      <h1>who am i?</h1>
-      <p>I am a web designer / developer and sound designer. Studied sound design
-        at the Vancouver Film School in 2017-18.</p>
-      </div>
+    <div id="slide2">
+      <a href="#about-btn" id="about-btn" class="nav-link">about</a>
+      <div class="about-text">
+      <h1>who am I?</h2>
+        <div class="abt-tagline">
+        <h2>My name is Ben Lusted, and I am a web developer.<h2>
+        </div>
+        </div>
+    </div>
+    <div id="slide3">
+      <a href="#home-btn" id="home-btn" class="nav-link">home</a>
+      <div class="landing-info-text">
+      <h1>Ben<br>Lusted,</h1><br>
+      <h2>Web Developer.</h2>
+    </div>
+    </div>
+    <div id="landing-info">
+      <a href="#contact-btn" id="contact-btn" class="nav-link">contact</a>
     </div>
   </body>
 </html>
