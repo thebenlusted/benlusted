@@ -1,63 +1,64 @@
 $(document).ready(function(){
   $('.about-text').hide();
+  $('.contact-info').hide();
 
   $('#landing-info').animate({width: "100%"}, 450);
-  $('#slide1').animate({width: "96%"}, 600);
-  $('#slide2').animate({width: "92%"}, 750);
-  $('#slide3').animate({width: "88%"}, 900);
+  $('#my-work-tab').animate({width: "96%"}, 600);
+  $('#about-tab').animate({width: "92%"}, 750);
+  $('#home-tab').animate({width: "88%"}, 900);
 });
 $(function() {
   let active = "slide-3";
     $('#home-btn').click(function(){
-    $('#slide3').animate({width: '88%'});
+    $('#home-tab').animate({width: '88%'});
     $('.landing-info-text h1').animate({left:'0'});
     $('.landing-info-text h2').animate({left:'0'});
 
-    $('#slide2').animate({width:'92%'});
-    $('.about-text h1').animate({left:'0px'});
-    $('.abt-tagline h2').animate({left:'0px'});
+    $('#about-tab').animate({width:'92%'});
+    $('.about-text').animate({left:'0px'});
 
-    $('#slide1').animate({width:'96%'});
+    $('#my-work-tab').animate({width:'96%'});
   });
 
   $('#about-btn').click(function() {
-    $('#slide3').animate({width: '60'});
+    $('#home-tab').animate({width: '60'});
     $('.landing-info-text h1').animate({left:'-1000px'});
     $('.landing-info-text h2').animate({left:'-1000px'});
 
-    $('#slide2').animate({width:'92%'});
-    $('.about-text h1').animate({left:'0px'});
-    $('.abt-tagline h2').animate({left:'0px'});
+    $('#about-tab').animate({width:'92%'});
+    $('.about-text').animate({left:'0px'});
     $('.about-text').show();
 
-    $('#slide1').animate({width:'96%'});
+    $('#my-work-tab').animate({width:'96%'});
 
 
 
   });
 
   $('#my-work-btn').click(function() {
-    $('#slide3').animate({width: '60'});
+    $('#home-tab').animate({width: '60'});
     $('.landing-info-text h1').animate({left:'-1000px'});
     $('.landing-info-text h2').animate({left:'-1000px'});
 
-    $('#slide2').animate({width: '120'});
-    $('.about-text h1').animate({left:'-1000px'});
-    $('.abt-tagline h2').animate({left:'-1000px'});
+    $('#about-tab').animate({width: '120'});
+    $('.about-text').animate({left:'-1500px'});
 
-    $('#slide1').animate({width:'96%'});
+    $('#my-work-tab').animate({width:'96%'});
+    $('.my-work-content').show();
+    $('.my-work-content').animate({left:'0px'});
   });
 
   $('#contact-btn').click(function() {
-    $('#slide3').animate({width:'60'});
+    $('#home-tab').animate({width:'60'});
     $('.landing-info-text h1').animate({left:'-1000px'});
     $('.landing-info-text h2').animate({left:'-1000px'});
 
-    $('#slide1').animate({width:'180'});
+    $('#my-work-tab').animate({width:'180'});
+    $('.my-work-content').animate({left:'-1500px'});
 
-    $('#slide2').animate({width:'120'});
-    $('.about-text h1').animate({left:'-1000px'});
-    $('.abt-tagline h2').animate({left:'-1000px'});
-    $('.about-text').hide();
+    $('#about-tab').animate({width:'120'});
+    $('.about-text').animate({left:'-1500px'});
+
+    $('.contact-info').show();
   });
 });
