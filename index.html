@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:400,900&display=swap" rel="stylesheet">
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-    rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
-    <!--JQUERY-->
-    <script
-  src="https://code.jquery.com/jquery-3.4.1.min.js"
-  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-  crossorigin="anonymous"></script>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,900&display=swap" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/c124511129.js" crossorigin="anonymous"></script>
 
-    <title>Ben Lusted | Portfolio</title>
-  </head>
-  <body>
-    <script src="js/javascript.js"></script>
-    <div class="container">
+
+  <!--JQUERY-->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+  <title>Ben Lusted | Portfolio</title>
+</head>
+
+<body>
+  <script src="js/javascript.js"></script>
+  <div class="container">
     <div id="contact-tab">
       <div class="contact-info">
         <h1>get in touch!</h1>
@@ -28,32 +28,39 @@
       <a href="#my-work-btn" id="my-work-btn" class="nav-link">my work</a>
       <div class="my-work-content">
         <h1>my work</h1>
+        <h2 id="work-tagline">Here is what I am good at</h2>
+        <div class="skill-category-card">
+          <i class="fas fa-pencil-alt" style="font-size:128px; position:absolute; margin:0; padding:0; transform:translate(-50%,25%);"></i>
+          <h3>Web Design</h3>
+        </div>
       </div>
     </div>
-    <div id="about-tab">
-      <a href="#about-btn" id="about-btn" class="nav-link">about</a>
-      <div class="about-text">
+  </div>
+  <div id="about-tab">
+    <a href="#about-btn" id="about-btn" class="nav-link">about</a>
+    <div class="about-text">
       <h1>who am I?</h1><br>
-        <div class="abt-tagline">
+      <div class="abt-tagline">
         <h2>My name is Ben Lusted, <br>and I am a web developer.<h2><br>
-          <h3>I am a Canadian currently living in Vancouver and looking for
-            the next big thing.</h3>
-        </div>
-        <div class="cont">
+            <h3>I am a Canadian currently living in Vancouver and looking for
+              the next big thing.</h3>
+      </div>
+      <div class="cont">
         <img src="images/me.png" alt="ME" class="about-img">
       </div>
-        </div>
     </div>
-    <div id="home-tab">
-      <a href="#home-btn" id="home-btn" class="nav-link">home</a>
-      <div class="landing-info-text">
+  </div>
+  <div id="home-tab">
+    <a href="#home-btn" id="home-btn" class="nav-link">home</a>
+    <div class="landing-info-text">
       <h1>Ben<br>Lusted,</h1><br>
       <h2>Web Developer.</h2>
     </div>
-    </div>
-    <div id="landing-info">
-      <a href="#contact-btn" id="contact-btn" class="nav-link">contact</a>
-    </div>
   </div>
-  </body>
+  <div id="landing-info">
+    <a href="#contact-btn" id="contact-btn" class="nav-link">contact</a>
+  </div>
+  </div>
+</body>
+
 </html>
