@@ -1,6 +1,7 @@
 $(document).ready(function() {
   $('.about-text').hide();
   $('.contact-info').hide();
+  $('.blackout-cover').hide();
 
   $('#landing-info').animate({
     width: "100%"
@@ -15,6 +16,32 @@ $(document).ready(function() {
     width: "88%"
   }, 900);
 });
+
+$(function() {
+  $('.skill-category-card').mouseenter(function() {
+    if(this.id === 'web-des-skills') {
+    $('.content-webdes').animate({top:'65%',opacity:'1'},20);
+  }
+    if(this.id === 'web-dev-skills') {
+    $('.content-webdev').animate({top:'65%',opacity:'1'},20);
+  }
+    if(this.id === 'gfx-skills') {
+    $('.content-gfx').animate({top:'65%',opacity:'1'},20);
+  }
+  });
+  $('.skill-category-card').mouseleave(function() {
+    if(this.id === 'web-des-skills') {
+    $('.content-webdes').animate({top:'-20%',opacity:'0'},25);
+    }
+      if(this.id === 'web-dev-skills') {
+      $('.content-webdev').animate({top:'-20%',opacity:'0'},25);
+    }
+      if(this.id === 'gfx-skills') {
+      $('.content-gfx').animate({top:'-20%',opacity:'0'},25);
+    }
+  });
+});
+
 $(function() {
   let active = "slide-3";
   $('#home-btn').click(function() {
@@ -41,6 +68,7 @@ $(function() {
   });
 
   $('#about-btn').click(function() {
+
     $('#home-tab').animate({
       width: '60'
     });
@@ -59,12 +87,7 @@ $(function() {
     });
     $('.about-text').show();
 
-    $('#my-work-tab').animate({
-      width: '96%'
-    });
-
-
-
+    $('#my-work-tab').animate({ width: '96%' });
   });
 
   $('#my-work-btn').click(function() {
@@ -121,10 +144,5 @@ $(function() {
     });
 
     $('.contact-info').show();
-  });
-
-
-  $('.skill-category-card').mouseenter(function() {
-    
   });
 });

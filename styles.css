@@ -1,5 +1,5 @@
 html {
-  scroll-behavior: smooth;
+  overflow:hidden;
 }
 
 body {
@@ -7,7 +7,6 @@ body {
   margin: 0;
   padding: 0;
 }
-
 
 /* CONTACT */
 #landing-info {
@@ -91,11 +90,13 @@ body {
   width: 0;
 }
 
-#my-work-tab .my-work-content {
+.my-work-content {
+  width:85%;
+  height:100vh;
   display: none;
   position: absolute;
   margin:0;
-  transform:translateX(35%);
+  transform:translateX(12%);
   padding: 0;
   font-family: 'Poppins';
   color: white;
@@ -114,13 +115,22 @@ body {
 }
 
 .skill-category-card {
-  background-color: rgba(68, 79, 83, 0.68);
-  width:260px;
-  height:260px;
+  background-color: rgb(68, 79, 83);
+  width:275px;
+  height:275px;
+  float:left;
   text-align: center;
+  display:inline;
   border-radius: 5%;
-  margin:0;
+  margin:75px;
+  margin-top:0 !important;
   padding:0;
+  transition: all 0.4s ease-in-out;
+}
+
+.skill-card-cont {
+  position:absolute;
+  left:12%;
 }
 .skill-category-card h3 {
   font-size:32px;
@@ -130,6 +140,21 @@ body {
   top:70%;
 }
 
+.content-webdes, .content-webdev, .content-gfx {
+  background-color:white;
+  width:275px;
+  height:250px;
+  position:relative;
+  top:-20%;
+  border-bottom-left-radius: 5%;
+  border-bottom-right-radius: 5%;
+  z-index: -10;
+  pointer-events:none;
+  transition:all 0.4s ease-in-out;
+  color:black;
+  font-size:20px;
+  opacity:0;
+}
 
 /* ABOUT */
 #about-tab {
