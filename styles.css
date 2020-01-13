@@ -126,6 +126,8 @@ body {
   margin-top:0 !important;
   padding:0;
   transition: all 0.4s ease-in-out;
+  animation: slide-up-fade-in ease 1.4s;
+  animation-iteration-count: 1;
 }
 
 .skill-card-cont {
@@ -138,6 +140,11 @@ body {
   margin:0;
   padding:0;
   top:70%;
+}
+#eye-hover {
+  position:absolute;
+  text-align:center;
+  top:6px;
 }
 
 .content-webdes, .content-webdev, .content-gfx {

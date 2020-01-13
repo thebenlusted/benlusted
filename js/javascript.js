@@ -1,7 +1,7 @@
 $(document).ready(function() {
   $('.about-text').hide();
   $('.contact-info').hide();
-  $('.blackout-cover').hide();
+  $('.my-work-content').hide();
 
   $('#landing-info').animate({
     width: "100%"
@@ -91,6 +91,7 @@ $(function() {
   });
 
   $('#my-work-btn').click(function() {
+    $('.my-work-content').show();
     $('#home-tab').animate({
       width: '60'
     });
