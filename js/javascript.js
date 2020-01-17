@@ -18,31 +18,6 @@ $(document).ready(function() {
 });
 
 $(function() {
-  $('.skill-category-card').mouseenter(function() {
-    if(this.id === 'web-des-skills') {
-    $('.content-webdes').animate({top:'65%',opacity:'1'},20);
-  }
-    if(this.id === 'web-dev-skills') {
-    $('.content-webdev').animate({top:'65%',opacity:'1'},20);
-  }
-    if(this.id === 'gfx-skills') {
-    $('.content-gfx').animate({top:'65%',opacity:'1'},20);
-  }
-  });
-  $('.skill-category-card').mouseleave(function() {
-    if(this.id === 'web-des-skills') {
-    $('.content-webdes').animate({top:'-20%',opacity:'0'},25);
-    }
-      if(this.id === 'web-dev-skills') {
-      $('.content-webdev').animate({top:'-20%',opacity:'0'},25);
-    }
-      if(this.id === 'gfx-skills') {
-      $('.content-gfx').animate({top:'-20%',opacity:'0'},25);
-    }
-  });
-});
-
-$(function() {
   let active = "slide-3";
   $('#home-btn').click(function() {
     $('#home-tab').animate({

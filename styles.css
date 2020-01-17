@@ -96,7 +96,7 @@ body {
   display: none;
   position: absolute;
   margin:0;
-  transform:translateX(12%);
+  transform:translateX(10%);
   padding: 0;
   font-family: 'Poppins';
   color: white;
@@ -112,55 +112,6 @@ body {
 }
 #work-tagline {
   font-size: 38px;
-}
-
-.skill-category-card {
-  background-color: rgb(68, 79, 83);
-  width:275px;
-  height:275px;
-  float:left;
-  text-align: center;
-  display:inline;
-  border-radius: 5%;
-  margin:75px;
-  margin-top:0 !important;
-  padding:0;
-  transition: all 0.4s ease-in-out;
-  animation: slide-up-fade-in ease 1.4s;
-  animation-iteration-count: 1;
-}
-
-.skill-card-cont {
-  position:absolute;
-  left:12%;
-}
-.skill-category-card h3 {
-  font-size:32px;
-  position: relative;
-  margin:0;
-  padding:0;
-  top:70%;
-}
-#eye-hover {
-  position:absolute;
-  text-align:center;
-  top:6px;
-}
-
-.content-webdes, .content-webdev, .content-gfx {
-  background-color:white;
-  width:275px;
-  height:250px;
-  position:relative;
-  top:-20%;
-  border-bottom-left-radius: 5%;
-  border-bottom-right-radius: 5%;
-  z-index: -10;
-  pointer-events:none;
-  transition:all 0.4s ease-in-out;
-  color:black;
-  font-size:20px;
-  opacity:0;
 }
 
 /* ABOUT */
@@ -192,12 +143,6 @@ body {
 .abt-tagline {
   width: 75%;
 }
-
-.abt-tagline h2 {
-  position: relative;
-  font-size: 42px;
-}
-
 .abt-tagline h3 {
   position: relative;
   font-size: 28px;
