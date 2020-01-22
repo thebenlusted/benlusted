@@ -18,45 +18,134 @@
 
 <body>
   <script src="js/javascript.js"></script>
-  <div class="container">
-    <div id="contact-tab">
-      <div class="contact-info">
-        <h1>get in touch!</h1>
-        <ul class="social-links">
+    <div class="container">
+      <div id="contact-tab">
+        <div class="contact-info">
+          <h1>get in touch!</h1>
+          <div class="social-links">
+          <ul>
+            <li><a href="https://twitter.com/thebenlusted"><i class="fab fa-twitter"></i></a>
+              <div class="tooltip-cont">
+                <div class="tooltip-test">
+  
+                  <div class="arrow-down"></div>
+  
+                </div>
+              </div>
+            </li>
+            <li><a href="https://vimeo.com/thebenlusted" target="_blank"><i class="fab fa-vimeo"></i></a>
+              
+            </li>
+            <li><a href="" target="_blank"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="https://dribbble.com/thebenlusted" target="_blank"><i class="fab fa-dribbble"></i></a></li>
+            <li><a href="https://codepen.io/thebenlusted" target="_blank"><i class="fab fa-codepen"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      </div>
+      <div id="my-work-tab">
+        <a href="#my-work" id="my-work-btn" class="nav-link">my work</a>
+        <div class="my-work-content">
+          <h1>my work</h1>
+          <h2 id="work-tagline">Recent Projects</h2>
 
-        </ul>
+          <div class="projects">
+            <br />
+            <table class="project-table">
+              <tr>
+                <th>JavaScript Authenticator</th>
+                <th>FrickIt Studios</th>
+              </tr>
+              <tr>
+                <td><a href="https://thebenlusted.github.io/jsauthentication/" target="_blank" title="JavaScript Authenticator"><img src="images/js-auth-screenshot.png"></a></td>
+                <td><a href="https://google.ca" target="_blank" title="FrickIt Studios Website"><img src="images/sigma-site-screenshot.png"></a></td>
+              </tr>
+              <tr>
+                <td>
+                  <p>
+                    The JavaScript Authenticator is a small tool I made to demonstrate 
+                    client-based storage of info in the browser, and using that to log 
+                    into a webpage.
+                  </p>
+                </td>
+                <td>
+                  <p>FrickIt Studios is the team behind 'SIGMA', a first person, raid-based, 
+                    hyper-realistic shooter based in Alaska. 
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <ul>
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>Vanilla JS</li>
+                  </ul>
+                </td>
+              </tr>
+            </table>
+
+          </div>
+        </div>
       </div>
-    </div>
-    <div id="my-work-tab">
-      <a href="#my-work-btn" id="my-work-btn" class="nav-link">my work</a>
-      <div class="my-work-content">
-        <h1>my work</h1>
-        <h2 id="work-tagline">Recent Projects</h2>
+      <div id="about-tab">
+        <a href="#about" id="about-btn" class="nav-link">about</a>
+        <div class="about-text">
+          <h1>who am I?</h1><br>
+          <div class="abt-tagline">
+            <h3>my name is Ben Lusted and I am a web developer based in Vancouver, British Columbia.</h3>
+          </div>
+          <div class="skill-cont">
+            
+            <div class="skill-info">
+              
+              <div class="ui-skill">
+                <h2>UI Design</h2>
+                <img src="images/skill-chart-graph.png" alt="skills for UI: Intermediate">
+                <i class="fa fa-circle" id="skill-point"></i>
+                <i class="fa fa-circle" id="skill-point" style="left:56px;"></i>
+                <i class="fa fa-circle" id="skill-point" style="left:112px;"></i>
+              </div>
+              <br />
+              <div class="ux-skill">
+                <h2>UX Design</h2>
+                <img src="images/skill-chart-graph.png" alt="skills for UX: Intermediate">
+                <i class="fa fa-circle" id="skill-point"></i>
+                <i class="fa fa-circle" id="skill-point" style="left:56px;"></i>
+                <i class="fa fa-circle" id="skill-point" style="left:112px;"></i>
+              </div>
+              <br />
+              <div class="code-skill">
+                <h2>Programming</h2>
+                <img src="images/skill-chart-graph.png" alt="skills for code: Normal">
+                <i class="fa fa-circle" id="skill-point"></i>
+                <i class="fa fa-circle" id="skill-point" style="left:56px;"></i>
+              </div>
+              <br />
+              <div class="sfx-skill">
+                <h2>Sound Design</h2>
+                <img src="images/skill-chart-graph.png" alt="skills for SFX: Expert">
+                <i class="fa fa-circle" id="skill-point"></i>
+                <i class="fa fa-circle" id="skill-point" style="left:56px;"></i>
+                <i class="fa fa-circle" id="skill-point" style="left:112px;"></i>
+                <i class="fa fa-circle" id="skill-point" style="left:166px;"></i>
+                <i class="fa fa-circle" id="skill-point" style="left:222px;"></i>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-  <div id="about-tab">
-    <a href="#about-btn" id="about-btn" class="nav-link">about</a>
-    <div class="about-text">
-      <h1>who am I?</h1><br>
-      <div class="abt-tagline">
-        <h3>my name is Ben Lusted and I am a web developer based in Vancouver, British Columbia.</h3>
+      <div id="home-tab">
+        <a href="#home" id="home-btn" class="active">home</a>
+        <div class="landing-info-text">
+          <h1>Ben<br>Lusted,</h1><br>
+          <h2>Web Developer.</h2>
+        </div>
       </div>
-      <div class="cont">
+      <div id="landing-info">
+        <a href="#contact" id="contact-btn" class="nav-link">contact</a>
       </div>
-    </div>
-  </div>
-  <div id="home-tab">
-    <a href="#home-btn" id="home-btn" class="nav-link">home</a>
-    <div class="landing-info-text">
-      <h1>Ben<br>Lusted,</h1><br>
-      <h2>Web Developer.</h2>
-    </div>
-  </div>
-  <div id="landing-info">
-    <a href="#contact-btn" id="contact-btn" class="nav-link">contact</a>
-  </div>
-  </div>
+    </div> 
 </body>
 
 </html>

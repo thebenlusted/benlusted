@@ -9,6 +9,44 @@ body {
 }
 
 /* CONTACT */
+.social-links ul {
+  position:absolute;
+  transform:translate(1150px, 640px);
+  list-style-type: none;
+  display:flex;
+  flex-direction: row;
+  font-size:32px;
+  text-align: left;
+}
+.social-links li {
+  transition: all 0.5s ease;
+  padding-right:30px;
+}
+.social-links a {
+  text-decoration: none;
+  color:white;
+}
+.social-links i {
+  border:4px solid white;
+  border-radius:50%;
+  padding:10px;
+}
+
+.tooltip-test {
+  position:absolute;
+  width:170px;
+  height:35px;
+  background-color:rgba(30, 30, 93,0.5);
+  text-align: center;
+  font-size:36px;
+  border-radius:10px;
+  top:50%;
+}
+.tooltip-cont {
+  margin-left:-55px;
+  transform:translateY(-118px);
+}
+
 #landing-info {
   padding: 0;
   margin: 0;
@@ -50,7 +88,7 @@ body {
   text-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
 }
 
-.nav-link {
+#my-work-btn, #contact-btn, #home-btn, #about-btn {
   position: relative;
   color: white;
   text-decoration: none;
@@ -77,6 +115,9 @@ body {
 .nav-link:hover:after {
   transition: height 100ms ease-in-out 0s;
   height: 100%;
+}
+.active {
+  border-left: 3px solid white;
 }
 
 /* MY WORK */
@@ -114,6 +155,34 @@ body {
   font-size: 38px;
 }
 
+
+/* Displays for work projects on the 'my work' page */
+.project-table img {
+  box-shadow: 0 0 0 6px white;
+  width:300px;
+  transition:all 0.5s ease;
+}
+.project-table img:hover {
+  box-shadow: 0 0 0 12px #FF1D58;
+}
+td {
+  padding: 0px 140px 0 0;
+  width:110px;
+  text-align:center;
+}
+th {
+  text-align: left;
+  padding-bottom: 10px;
+  font-size:22px;
+}
+.project-table ul {
+  text-align:left;
+  margin-left:50%;
+  transform:translateX(-50%);
+}
+
+
+
 /* ABOUT */
 #about-tab {
   position: absolute;
@@ -148,20 +217,26 @@ body {
   font-size: 28px;
 }
 
-.cont {
-  width: 50%;
+.skill-cont h2 {
+  font-size:46px;
+  margin:0;
+  padding:0;
+}
+.skill-cont {
+  width:100%;
+  height:100%;
   position: absolute;
-  top: 30%;
-  left: 60%;
+  transform:translateY(100px);
+}
+#skill-point {
+  position: absolute;
+  left:0;
+  font-size:32px;
 }
 
-.cont img {
-  width: 30%;
-  border-radius: 50%;
-  border-style: solid;
-  border-color: white;
-  border-width: medium;
-}
+
+
+
 
 /* HOME */
 #home-tab {
@@ -192,6 +267,30 @@ body {
   font-size: 85px;
   text-shadow: 10px 10px 15px rgba(0, 0, 0, 0.15);
 }
+
+
+
+
+.arrow-down {
+  width:0;
+  height:0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  
+  border-top:20px solid rgba(30, 30, 93,0.5);
+  position:relative;
+  top:100%;
+  left:50%;
+  transform:translateX(-50%);
+  padding:0;
+}
+
+
+
+
+
+
+
 /* ELEMENT SLIDE UP AND FADE IN */
 @keyframes slide-up-fade-in {
   from {
