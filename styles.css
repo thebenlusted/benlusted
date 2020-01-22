@@ -11,7 +11,7 @@ body {
 /* CONTACT */
 .social-links ul {
   position:absolute;
-  transform:translate(1150px, 640px);
+  transform:translate(1100px, 640px);
   list-style-type: none;
   display:flex;
   flex-direction: row;
@@ -20,7 +20,7 @@ body {
 }
 .social-links li {
   transition: all 0.5s ease;
-  padding-right:30px;
+  margin-right:40px;
 }
 .social-links a {
   text-decoration: none;
@@ -37,14 +37,22 @@ body {
   width:170px;
   height:35px;
   background-color:rgba(30, 30, 93,0.5);
-  text-align: center;
   font-size:36px;
   border-radius:10px;
-  top:50%;
 }
 .tooltip-cont {
   margin-left:-55px;
-  transform:translateY(-118px);
+  opacity:0;
+  
+}
+.tooltip-cont p {
+  position:relative;
+  text-align: center;
+  z-index: 10;
+  left:25%;
+  font-size:20px;
+  margin:auto;
+  padding-top:3px;
 }
 
 #landing-info {
@@ -255,6 +263,12 @@ th {
 }
 .contacts p {
   font-size:22px;
+}
+.contacts a {
+  color: white;
+  font-size:22px;
+  text-decoration: none;
+  background-color: rgba(255, 134, 146, 0.34);
 }
 #contact-tab .contact-info {
   display: none;

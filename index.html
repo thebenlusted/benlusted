@@ -6,149 +6,183 @@
   <meta charset="utf-8">
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css?family=Poppins:400,900&display=swap" rel="stylesheet">
-  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <script src="https://kit.fontawesome.com/c124511129.js" crossorigin="anonymous"></script>
-
+  
 
   <!--JQUERY-->
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="http://ricostacruz.com/jquery.transit/jquery.transit.js"></script>
 
   <title>Ben Lusted | Portfolio</title>
 </head>
 
 <body>
   <script src="js/javascript.js"></script>
-    <div class="container">
-      <div id="contact-tab">
-        <div class="contact-info">
-          <h1>get in touch!</h1>
-            <div class="contacts">
-              <br />
-              <p>lustedbenjamin@gmail.com</p>
-              <a href="https://docs.google.com/document/d/1s2j8SoidUUO8dMVRE8KxoX2l-q9GXk4V0XK4ZbMMIYo/edit?usp=sharing" target="_blank">Checkout my resume!</a>
-            </div>
-          <div class="social-links">
+  <div class="container">
+    <div id="contact-tab">
+      <div class="contact-info">
+        <h1>get in touch!</h1>
+        <div class="contacts">
+          <br />
+          <p>lustedbenjamin@gmail.com</p>
+          <a href="https://docs.google.com/document/d/1s2j8SoidUUO8dMVRE8KxoX2l-q9GXk4V0XK4ZbMMIYo/edit?usp=sharing"
+            target="_blank">Checkout my resume!</a>
+        </div>
+        <div class="social-links">
           <ul>
-            <li><a href="https://twitter.com/thebenlusted"><i class="fab fa-twitter"></i></a>
+            <li class="soc-link"><a href="https://twitter.com/thebenlusted"><i class="fab fa-twitter"></i></a>
               <div class="tooltip-cont">
                 <div class="tooltip-test">
                   <div class="arrow-down"></div>
                 </div>
+                <p>twitter</p>
               </div>
             </li>
-            <li><a href="https://vimeo.com/thebenlusted" target="_blank"><i class="fab fa-vimeo"></i></a>
-              
+            <li class="soc-link"><a href="https://vimeo.com/thebenlusted" target="_blank"><i class="fab fa-vimeo"></i></a>
+              <div class="tooltip-cont">
+                <div class="tooltip-test">
+                  <div class="arrow-down">
+                  </div>
+                </div>
+                <p>vimeo</p>
+              </div>
             </li>
-            <li><a href="" target="_blank"><i class="fab fa-facebook"></i></a></li>
-            <li><a href="https://dribbble.com/thebenlusted" target="_blank"><i class="fab fa-dribbble"></i></a></li>
-            <li><a href="https://codepen.io/thebenlusted" target="_blank"><i class="fab fa-codepen"></i></a></li>
+            <li class="soc-link"><a href="" target="_blank"><i class="fab fa-facebook"></i></a>
+              <div class="tooltip-cont">
+                <div class="tooltip-test">
+                  <div class="arrow-down"></div>
+                </div>
+                <p>facebook</p>
+              </div>
+            </li>
+            <li class="soc-link"><a href="https://dribbble.com/thebenlusted" target="_blank"><i class="fab fa-dribbble"></i></a>
+              <div class="tooltip-cont">
+                <div class="tooltip-test">
+                  <div class="arrow-down"></div>
+                </div>
+                <p>dribbble</p>
+              </div>
+            </li>
+            <li class="soc-link"><a href="https://codepen.io/thebenlusted" target="_blank"><i class="fab fa-codepen"></i></a>
+              <div class="tooltip-cont">
+                <div class="tooltip-test">
+                  <div class="arrow-down"></div>
+                </div>
+                <p>vimeo</p>
+              </div>
+            </li>
           </ul>
         </div>
       </div>
-      </div>
-      <div id="my-work-tab">
-        <a href="#my-work" id="my-work-btn" class="nav-link">my work</a>
-        <div class="my-work-content">
-          <h1>my work</h1>
-          <h2 id="work-tagline">Recent Projects</h2>
+    </div>
+    <div id="my-work-tab">
+      <a href="#my-work" id="my-work-btn" class="nav-link">my work</a>
+      <div class="my-work-content">
+        <h1>my work</h1>
+        <h2 id="work-tagline">Recent Projects</h2>
 
-          <div class="projects">
-            <br />
-            <table class="project-table">
-              <tr>
-                <th>JavaScript Authenticator</th>
-                <th>FrickIt Studios</th>
-              </tr>
-              <tr>
-                <td><a href="https://thebenlusted.github.io/jsauthentication/" target="_blank" title="JavaScript Authenticator"><img src="images/js-auth-screenshot.png"></a></td>
-                <td><a href="https://google.ca" target="_blank" title="FrickIt Studios Website"><img src="images/sigma-site-screenshot.png"></a></td>
-              </tr>
-              <tr>
-                <td>
-                  <p>
-                    The JavaScript Authenticator is a small tool I made to demonstrate 
-                    client-based storage of info in the browser, and using that to log 
-                    into a webpage.
-                  </p>
-                </td>
-                <td>
-                  <p>FrickIt Studios is the team behind 'SIGMA', a first person, raid-based, 
-                    hyper-realistic shooter based in Alaska. 
-                  </p>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <ul>
-                    <li>HTML5</li>
-                    <li>CSS3</li>
-                    <li>Vanilla JS</li>
-                  </ul>
-                </td>
-              </tr>
-            </table>
+        <div class="projects">
+          <br />
+          <table class="project-table">
+            <tr>
+              <th>JavaScript Authenticator</th>
+              <th>FrickIt Studios</th>
+            </tr>
+            <tr>
+              <td><a href="https://thebenlusted.github.io/jsauthentication/" target="_blank"
+                  title="JavaScript Authenticator"><img src="images/js-auth-screenshot.png"></a></td>
+              <td><a href="https://google.ca" target="_blank" title="FrickIt Studios Website"><img
+                    src="images/sigma-site-screenshot.png"></a></td>
+            </tr>
+            <tr>
+              <td>
+                <p>
+                  The JavaScript Authenticator is a small tool I made to demonstrate
+                  client-based storage of info in the browser, and using that to log
+                  into a webpage.
+                </p>
+              </td>
+              <td>
+                <p>FrickIt Studios is the team behind 'SIGMA', a first person, raid-based,
+                  hyper-realistic shooter based in Alaska.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <ul>
+                  <li>HTML5</li>
+                  <li>CSS3</li>
+                  <li>Vanilla JS</li>
+                </ul>
+              </td>
+            </tr>
+          </table>
 
-          </div>
         </div>
       </div>
-      <div id="about-tab">
-        <a href="#about" id="about-btn" class="nav-link">about</a>
-        <div class="about-text">
-          <h1>who am I?</h1><br>
-          <div class="abt-tagline">
-            <h3>my name is Ben Lusted and I am a web developer based in Vancouver, British Columbia.</h3>
-          </div>
-          <div class="skill-cont">
-            
-            <div class="skill-info">
-              
-              <div class="ui-skill">
-                <h2>UI Design</h2>
-                <img src="images/skill-chart-graph.png" alt="skills for UI: Intermediate">
-                <i class="fa fa-circle" id="skill-point"></i>
-                <i class="fa fa-circle" id="skill-point" style="left:56px;"></i>
-                <i class="fa fa-circle" id="skill-point" style="left:112px;"></i>
-              </div>
-              <br />
-              <div class="ux-skill">
-                <h2>UX Design</h2>
-                <img src="images/skill-chart-graph.png" alt="skills for UX: Intermediate">
-                <i class="fa fa-circle" id="skill-point"></i>
-                <i class="fa fa-circle" id="skill-point" style="left:56px;"></i>
-                <i class="fa fa-circle" id="skill-point" style="left:112px;"></i>
-              </div>
-              <br />
-              <div class="code-skill">
-                <h2>Programming</h2>
-                <img src="images/skill-chart-graph.png" alt="skills for code: Normal">
-                <i class="fa fa-circle" id="skill-point"></i>
-                <i class="fa fa-circle" id="skill-point" style="left:56px;"></i>
-              </div>
-              <br />
-              <div class="sfx-skill">
-                <h2>Sound Design</h2>
-                <img src="images/skill-chart-graph.png" alt="skills for SFX: Expert">
-                <i class="fa fa-circle" id="skill-point"></i>
-                <i class="fa fa-circle" id="skill-point" style="left:56px;"></i>
-                <i class="fa fa-circle" id="skill-point" style="left:112px;"></i>
-                <i class="fa fa-circle" id="skill-point" style="left:166px;"></i>
-                <i class="fa fa-circle" id="skill-point" style="left:222px;"></i>
-              </div>
+    </div>
+    <div id="about-tab">
+      <a href="#about" id="about-btn" class="nav-link">about</a>
+      <div class="about-text">
+        <h1>who am I?</h1><br>
+        <div class="abt-tagline">
+          <h3>my name is Ben Lusted and I am a web developer based in Vancouver, British Columbia.</h3>
+        </div>
+        <div class="skill-cont">
+
+          <div class="skill-info">
+
+            <div class="ui-skill">
+              <h2>UI Design</h2>
+              <img src="images/skill-chart-graph.png" alt="skills for UI: Intermediate">
+              <i class="fa fa-circle" id="skill-point"></i>
+              <i class="fa fa-circle" id="skill-point" style="left:56px;"></i>
+              <i class="fa fa-circle" id="skill-point" style="left:112px;"></i>
+            </div>
+            <br />
+            <div class="ux-skill">
+              <h2>UX Design</h2>
+              <img src="images/skill-chart-graph.png" alt="skills for UX: Intermediate">
+              <i class="fa fa-circle" id="skill-point"></i>
+              <i class="fa fa-circle" id="skill-point" style="left:56px;"></i>
+              <i class="fa fa-circle" id="skill-point" style="left:112px;"></i>
+            </div>
+            <br />
+            <div class="code-skill">
+              <h2>Programming</h2>
+              <img src="images/skill-chart-graph.png" alt="skills for code: Normal">
+              <i class="fa fa-circle" id="skill-point"></i>
+              <i class="fa fa-circle" id="skill-point" style="left:56px;"></i>
+            </div>
+            <br />
+            <div class="sfx-skill">
+              <h2>Sound Design</h2>
+              <img src="images/skill-chart-graph.png" alt="skills for SFX: Expert">
+              <i class="fa fa-circle" id="skill-point"></i>
+              <i class="fa fa-circle" id="skill-point" style="left:56px;"></i>
+              <i class="fa fa-circle" id="skill-point" style="left:112px;"></i>
+              <i class="fa fa-circle" id="skill-point" style="left:166px;"></i>
+              <i class="fa fa-circle" id="skill-point" style="left:222px;"></i>
             </div>
           </div>
         </div>
       </div>
-      <div id="home-tab">
-        <a href="#home" id="home-btn" class="active">home</a>
-        <div class="landing-info-text">
-          <h1>Ben<br>Lusted,</h1><br>
-          <h2>Web Developer.</h2>
-        </div>
+    </div>
+    <div id="home-tab">
+      <a href="#home" id="home-btn" class="active">home</a>
+      <div class="landing-info-text">
+        <h1>Ben<br>Lusted,</h1><br>
+        <h2>Web Developer.</h2>
       </div>
-      <div id="landing-info">
-        <a href="#contact" id="contact-btn" class="nav-link">contact</a>
-      </div>
-    </div> 
+    </div>
+    <div id="landing-info">
+      <a href="#contact" id="contact-btn" class="nav-link">contact</a>
+    </div>
+  </div>
 </body>
 
 </html>

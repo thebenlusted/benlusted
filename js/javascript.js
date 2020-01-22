@@ -2,13 +2,13 @@ $('.about-text').hide();
 $('.contact-info').hide();
 $('.my-work-content').hide();
 
-$(document).ready(function() {
+$(document).ready(function () {
   $('#landing-info').animate({
     width: "100%"
   }, 450);
   $('#my-work-tab').animate({
     width: "96%"
-  }, 600, function() {
+  }, 600, function () {
     $('.contact-info').show();
   });
   $('#about-tab').animate({
@@ -19,11 +19,11 @@ $(document).ready(function() {
   }, 900);
 });
 
-$(function() {
-  $('#home-btn').click(function() {
+$(function () {
+  $('#home-btn').click(function () {
 
     $('#home-btn').addClass("active").removeClass("nav-link");
-    
+
     $('#about-btn').removeClass("active").addClass("nav-link");
     $('#contact-btn').removeClass("active").addClass("nav-link");
     $('#my-work-btn').removeClass("active").addClass("nav-link");
@@ -53,14 +53,14 @@ $(function() {
     });
   });
 
-  $('#about-btn').click(function() {
+  $('#about-btn').click(function () {
 
     $('#about-btn').addClass("active").removeClass("nav-link");
 
     $('#home-btn').removeClass("active").addClass("nav-link");
     $('#contact-btn').removeClass("active").addClass("nav-link");
     $('#my-work-btn').removeClass("active").addClass("nav-link");
-    
+
     $('#home-tab').animate({
       width: '60'
     });
@@ -85,10 +85,10 @@ $(function() {
     });
   });
 
-  $('#my-work-btn').click(function() {
+  $('#my-work-btn').click(function () {
 
     $('#my-work-btn').addClass("active").removeClass("nav-link");
-    
+
     $('#home-btn').removeClass("active").addClass("nav-link");
     $('#contact-btn').removeClass("active").addClass("nav-link");
     $('#about-btn').removeClass("active").addClass("nav-link");
@@ -121,10 +121,10 @@ $(function() {
 
   });
 
-  $('#contact-btn').click(function() {
+  $('#contact-btn').click(function () {
 
     $('#contact-btn').addClass("active").removeClass("nav-link");
-    
+
     $('#home-btn').removeClass("active").addClass("nav-link");
     $('#about-btn').removeClass("active").addClass("nav-link");
     $('#my-work-btn').removeClass("active").addClass("nav-link");
@@ -152,5 +152,12 @@ $(function() {
     $('.about-text').animate({
       left: '-1500px'
     });
+  });
+
+  $('.soc-link').mouseenter(function () {
+    $(this).children('.tooltip-cont').stop().animate({ y:'-120px', opacity:1 });
+  });
+  $('.soc-link').mouseleave(function () {
+    $(this).children('.tooltip-cont').stop().animate({ y:'-90px', opacity: '0' });
   });
 });
