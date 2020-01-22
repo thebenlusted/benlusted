@@ -250,7 +250,12 @@ th {
   padding: 0;
   margin: 0;
 }
-
+.contacts {
+  position: absolute;
+}
+.contacts p {
+  font-size:22px;
+}
 #contact-tab .contact-info {
   display: none;
   position: absolute;
