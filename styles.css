@@ -188,6 +188,9 @@ th {
   margin-left:50%;
   transform:translateX(-50%);
 }
+.project-table #git-links {
+  color:white;
+}
 
 
 
