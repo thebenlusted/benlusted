@@ -1,14 +1,16 @@
-$(document).ready(function() {
-  $('.about-text').hide();
-  $('.contact-info').hide();
-  $('.my-work-content').hide();
+$('.about-text').hide();
+$('.contact-info').hide();
+$('.my-work-content').hide();
 
+$(document).ready(function() {
   $('#landing-info').animate({
     width: "100%"
   }, 450);
   $('#my-work-tab').animate({
     width: "96%"
-  }, 600);
+  }, 600, function() {
+    $('.contact-info').show();
+  });
   $('#about-tab').animate({
     width: "92%"
   }, 750);
@@ -150,7 +152,5 @@ $(function() {
     $('.about-text').animate({
       left: '-1500px'
     });
-
-    $('.contact-info').show();
   });
 });
